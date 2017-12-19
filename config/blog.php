@@ -51,11 +51,11 @@ return [
     'footer' => [
         'github' => [
             'open' => true,
-            'url'  => 'https://github.com/jcc',
+            'url'  => 'https://github.com/wybcp',
         ],
         'twitter' => [
             'open' => true,
-            'url'  => 'https://twitter.com/pigjian'
+            'url'  => 'https://twitter.com/PHP_riverside'
         ],
         'meta' => '© PJ Blog 2016. Powered By Jiajian Chan',
     ],

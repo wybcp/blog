@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use App\Tools\Markdowner;
 use Jcc\LaravelVote\CanBeVoted;

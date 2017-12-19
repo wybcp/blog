@@ -14,8 +14,8 @@ return [
     | Supported: "local", "ftp", "s3", "rackspace"
     |
     */
-
-    'default' => 'public',
+    'default' => env('FILESYSTEM_DISKS') ?: 'public',
+//    'default' => 'public',
 
     /*
     |--------------------------------------------------------------------------
@@ -70,6 +70,18 @@ return [
             'password'      => env('UPYUN_PASSWORD'),
             'domain'        => env('UPYUN_DOMAIN'),
             'protocol'      => env('UPYUN_PROTOCOL'),
+        ],
+        'qiniu' => [
+            'driver'  => 'qiniu',
+            'domains' => [
+                'default'   => 'xxxxx.clouddn.com', //你的七牛域名
+                'https'     => 'dn-yourdomain.qbox.me',         //你的HTTPS域名
+                'custom'    => 'static.abc.com',                //你的自定义域名
+            ],
+            'access_key'=> '',  //AccessKey
+            'secret_key'=> '',  //SecretKey
+            'bucket'    => '',  //Bucket名字
+            'notify_url'=> '',  //持久化处理回调地址
         ],
 
     ],
