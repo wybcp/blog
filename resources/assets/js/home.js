@@ -1,5 +1,5 @@
 window.$ = window.jQuery = require('jquery');
-window.swal = require('sweetalert');
+window.swal = require('sweetalert2');
 window.Vue = require('vue');
 
 import VueI18n from 'vue-i18n';
