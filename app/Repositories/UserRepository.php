@@ -3,7 +3,7 @@
 namespace App\Repositories;
 
 use Auth;
-use App\User;
+use App\Models\User;
 use App\Scopes\StatusScope;
 
 class UserRepository
@@ -104,7 +104,7 @@ class UserRepository
     /**
      * Change the user password.
      * 
-     * @param  App\User $user 
+     * @param  App\Models\User $user
      * @param  string $password
      * @return boolean
      */

@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Article;
-use App\Discussion;
+use App\Models\Article;
+use App\Models\Discussion;
 use Illuminate\Support\ServiceProvider;
 use App\Tools\FileManager\BaseManager;
 use App\Tools\FileManager\UpyunManager;

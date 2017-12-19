@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Comment;
+use App\Models\Comment;
 use App\Tools\Mention;
 use App\Notifications\GotVote;
 use App\Notifications\MentionedUser;
@@ -95,7 +95,7 @@ class CommentRepository
     /**
      * Up vote or down vote item.
      * 
-     * @param  \App\User $user
+     * @param  \App\Models\User $user
      * @param  \Illuminate\Database\Eloquent\Model $target
      * @param  string $type
      * 

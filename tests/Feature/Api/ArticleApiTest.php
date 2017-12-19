@@ -21,7 +21,7 @@ class ArticleApiTest extends TestCase
     /** @test */
     public function it_shows_a_article()
     {
-        $article = factory(\App\Article::class, 1)->create()->first();
+        $article = factory(\App\Models\Article::class, 1)->create()->first();
         $response = $this->actingAsAdmin()->get(route('api.article.edit', $article->id));
 
         $response->assertStatus(200);
@@ -30,7 +30,7 @@ class ArticleApiTest extends TestCase
     /** @test */
     public function it_store_a_article()
     {
-        $article = factory(\App\Article::class)->make();
+        $article = factory(\App\Models\Article::class)->make();
 
         $data = array_merge($article->toArray(), [ 'tags' => '[1, 2]' ]);
 

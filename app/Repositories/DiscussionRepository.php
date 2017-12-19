@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Discussion;
+use App\Models\Discussion;
 use App\Scopes\StatusScope;
 
 class DiscussionRepository
@@ -128,7 +128,7 @@ class DiscussionRepository
     /**
      * Get a list of tag ids that are associated with the given discussion.
      *
-     * @param \App\Discussion $discussion
+     * @param \App\Models\Discussion $discussion
      *
      * @return array
      */
