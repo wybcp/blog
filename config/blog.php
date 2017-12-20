@@ -34,7 +34,7 @@ return [
     // Article Page
     'article' => [
         'title'       => 'Nothing is impossible.',
-        'description' => 'https://pigjian.com',
+        'description' => 'https://riverside.website',
         'number'      => 15,
         'sort'        => 'desc',
         'sortColumn'  => 'published_at',

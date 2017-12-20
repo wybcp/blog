@@ -74,13 +74,13 @@ return [
         'qiniu' => [
             'driver'  => 'qiniu',
             'domains' => [
-                'default'   => 'xxxxx.clouddn.com', //你的七牛域名
-                'https'     => 'dn-yourdomain.qbox.me',         //你的HTTPS域名
+                'default'   => env('QINIU_DEFAULT')?:'xxxxx.clouddn.com', //你的七牛域名
+                'https'     => env('QINIU_HTTPS')?:'dn-yourdomain.qbox.me',         //你的HTTPS域名
                 'custom'    => 'static.abc.com',                //你的自定义域名
             ],
-            'access_key'=> '',  //AccessKey
-            'secret_key'=> '',  //SecretKey
-            'bucket'    => '',  //Bucket名字
+            'access_key'=> env('QINIU_ACCESS_KEY')?:'',  //AccessKey
+            'secret_key'=> env('QINIU_SECRET_KEY')?:'',  //SecretKey
+            'bucket'    => env('QINIU_BUCKET')?:'',  //Bucket名字
             'notify_url'=> '',  //持久化处理回调地址
         ],
 
