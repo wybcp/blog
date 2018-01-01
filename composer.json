@@ -20,6 +20,7 @@
         "league/fractal": "^0.14.0",
         "league/html-to-markdown": "^4.2",
         "predis/predis": "^1.1",
+        "renatomarinho/laravel-page-speed": "^1.8",
         "yzalis/identicon": "^1.1",
         "zgldh/qiniu-laravel-storage": "^0.9.0"
     },

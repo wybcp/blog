@@ -40,6 +40,7 @@ class ArticleController extends ApiController
             'last_user_id' => \Auth::id()
         ]);
 
+        dd($data);
         $data['is_draft']    = isset($data['is_draft']);
         $data['is_original'] = isset($data['is_original']);
 
