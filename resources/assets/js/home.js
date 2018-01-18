@@ -1,5 +1,8 @@
 window.$ = window.jQuery = require('jquery');
+<<<<<<< HEAD
 window.swal = require('sweetalert2');
+=======
+>>>>>>> 9a115298f573500dcc8f72745b3b4a195c45bf4f
 window.Vue = require('vue');
 
 import VueI18n from 'vue-i18n';
