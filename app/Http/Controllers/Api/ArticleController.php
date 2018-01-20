@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Requests\ArticleRequest;
 use App\Repositories\ArticleRepository;
+use Illuminate\Support\Facades\Auth;
+
 
 class ArticleController extends ApiController
 {
@@ -36,11 +38,10 @@ class ArticleController extends ApiController
     public function store(ArticleRequest $request)
     {
         $data = array_merge($request->all(), [
-            'user_id'      => \Auth::id(),
-            'last_user_id' => \Auth::id()
+            'user_id'      => Auth::id(),
+            'last_user_id' => Auth::id()
         ]);
 
-        dd($data);
         $data['is_draft']    = isset($data['is_draft']);
         $data['is_original'] = isset($data['is_original']);
 
@@ -74,7 +75,7 @@ class ArticleController extends ApiController
     public function update(ArticleRequest $request, $id)
     {
         $data = array_merge($request->all(), [
-            'last_user_id' => \Auth::id()
+            'last_user_id' => Auth::id()
         ]);
 
         $this->article->update($id, $data);

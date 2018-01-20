@@ -2,20 +2,22 @@
 
 Route::group([
     'middleware' => ['auth:api', 'admin'],
-    'namespace' => 'Api',
+    'namespace'  => 'Api',
 ], function () {
     Route::get('statistics', 'HomeController@statistics');
 
     Route::resource('user', 'UserController', ['except' => ['create', 'show']]);
     Route::post('/user/{id}/status', 'UserController@status');
 
-    Route::resource('article', 'ArticleController', ['names' => [
-        'index' => 'api.article.index',
-        'store' => 'api.article.store',
-        'edit' => 'api.article.edit',
-        'update' => 'api.article.update',
-        'destroy' => 'api.article.destroy',
-    ],'except' => ['create', 'show']]);
+    Route::resource('article', 'ArticleController', [
+        'names'     => [
+            'index'   => 'api.article.index',
+            'store'   => 'api.article.store',
+            'edit'    => 'api.article.edit',
+            'update'  => 'api.article.update',
+            'destroy' => 'api.article.destroy',
+        ], 'except' => ['create', 'show']
+    ]);
 
     Route::resource('category', 'CategoryController', ['except' => ['create', 'show']]);
     Route::get('/categories', 'CategoryController@getList');
@@ -43,9 +45,7 @@ Route::group([
     Route::get('system', 'SystemController@getSystemInfo');
 });
 
-Route::group([
-    'namespace' => 'Api',
-], function () {
+Route::group(['namespace' => 'Api',], function () {
     // File Upload
     Route::post('file/upload', 'UploadController@fileUpload')->middleware('auth:api');
     // Edit Avatar
