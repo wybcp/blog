@@ -34,7 +34,7 @@ return [
     // Article Page
     'article' => [
         'title'       => 'Nothing is impossible.',
-        'description' => 'https://pigjian.com',
+        'description' => 'https://riverside.website',
         'number'      => 15,
         'sort'        => 'desc',
         'sortColumn'  => 'published_at',
@@ -51,11 +51,11 @@ return [
     'footer' => [
         'github' => [
             'open' => true,
-            'url'  => 'https://github.com/jcc',
+            'url'  => 'https://github.com/wybcp',
         ],
         'twitter' => [
             'open' => true,
-            'url'  => 'https://twitter.com/pigjian'
+            'url'  => 'https://twitter.com/PHP_riverside'
         ],
         'meta' => '© PJ Blog 2016. Powered By Jiajian Chan',
     ],
