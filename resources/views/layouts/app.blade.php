@@ -9,7 +9,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="360-site-verification" content="dbb6c5a6488029951e20f3cf83a2a422" />
+    <meta name="360-site-verification" content="8cee2d0c1f287ac8875833a0590cc373" />
     <meta baidu-gxt-verify-token="de3d4a29ad7f4b3e92158ee88497ac1c">
     <link rel="shortcut icon" href="{{ config('blog.default_icon') }}">
 
