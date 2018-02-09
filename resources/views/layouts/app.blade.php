@@ -11,6 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="360-site-verification" content="8cee2d0c1f287ac8875833a0590cc373" />
     <meta baidu-gxt-verify-token="de3d4a29ad7f4b3e92158ee88497ac1c">
+    <meta name="google-site-verification" content="5YctfKXAScvCXFhSYjgkmD_qRxszipA-VKwmC-0ckK8" />
     <link rel="shortcut icon" href="{{ config('blog.default_icon') }}">
 
     <title>@yield('title', config('app.name'))</title>
