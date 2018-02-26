@@ -43,7 +43,7 @@ trait_exists
 
         @include('particals.footer')
     </div>
-
+<footer>footer</footer>
     <!-- Scripts -->
     <script src="{{ mix('js/home.js') }}"></script>
 
