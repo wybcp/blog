@@ -31,6 +31,9 @@
     @yield('styles')
 </head>
 <body>
+<header>
+trait_exists
+</header>
     <div id="app">
         @include('particals.navbar')
 
