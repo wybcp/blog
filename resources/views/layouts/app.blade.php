@@ -32,7 +32,7 @@
 </head>
 <body>
 <header>
-trait_exists
+boss
 </header>
     <div id="app">
         @include('particals.navbar')
