@@ -31,6 +31,7 @@
     @yield('styles')
 </head>
 <body>
+<head>good</head>
     <div id="app">
         @include('particals.navbar')
 
@@ -40,7 +41,7 @@
 
         @include('particals.footer')
     </div>
-
+<footer>footer</footer>
     <!-- Scripts -->
     <script src="{{ mix('js/home.js') }}"></script>
 
