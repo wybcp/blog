@@ -31,9 +31,6 @@
     @yield('styles')
 </head>
 <body>
-<header>
-trait_exists
-</header>
     <div id="app">
         @include('particals.navbar')
 
@@ -43,7 +40,7 @@ trait_exists
 
         @include('particals.footer')
     </div>
-<footer>footer</footer>
+
     <!-- Scripts -->
     <script src="{{ mix('js/home.js') }}"></script>
 
