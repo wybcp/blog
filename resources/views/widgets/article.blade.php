@@ -1,10 +1,10 @@
 <div class="container list">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <ul class="list-unstyled col-md-10 offset-md-1">
             @forelse($articles as $article)
-            <div class="media">
+            <li class="media">
                 @if($article->page_image)
-                <a class="media-left" href="{{ url($article->slug) }}">
+                <a class="media-left mr-3" href="{{ url($article->slug) }}">
                     <img alt="{{ $article->slug }}" src="{{ $article->page_image }}" data-holder-rendered="true">
                 </a>
                 @endif
@@ -23,24 +23,24 @@
                     <div class="extra">
                         @foreach($article->tags as $tag)
                         <a href="{{ url('tag', ['tag' => $tag->tag]) }}">
-                            <div class="label"><i class="ion-pricetag"></i>{{ $tag->tag }}</div>
+                            <div class="label"><i class="fas fa-tag"></i>{{ $tag->tag }}</div>
                         </a>
                         @endforeach
 
                         <div class="info">
-                            <i class="ion-person"></i>{{ $article->user->name or 'null' }}&nbsp;,&nbsp;
-                            <i class="ion-clock"></i>{{ $article->published_at->diffForHumans() }}&nbsp;,&nbsp;
-                            <i class="ion-ios-eye"></i>{{ $article->view_count }}
-                            <a href="{{ url($article->slug) }}" class="pull-right">
-                                Read More <i class="ion-ios-arrow-forward"></i>
+                            <i class="fas fa-user"></i>{{ $article->user->name or 'null' }}&nbsp;,&nbsp;
+                            <i class="fas fa-clock"></i>{{ $article->published_at->diffForHumans() }}&nbsp;,&nbsp;
+                            <i class="fas fa-eye"></i>{{ $article->view_count }}
+                            <a href="{{ url($article->slug) }}" class="float-right">
+                                Read More <i class="fas fa-chevron-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </li>
             @empty
                 <h3 class="text-center">{{ lang('Nothing') }}</h3>
             @endforelse
-        </div>
+        </ul>
     </div>
 </div>

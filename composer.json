@@ -1,7 +1,11 @@
 {
   "name": "jcc/blog",
   "description": "A full-featured, easy-to-use, well-expanded blog system powered by laravel and vuejs.",
-  "keywords": ["blog", "laravel", "vue"],
+  "keywords": [
+    "blog",
+    "laravel",
+    "vue"
+  ],
   "license": "MIT",
   "type": "project",
   "require": {
@@ -47,8 +51,7 @@
   },
   "extra": {
     "laravel": {
-      "dont-discover": [
-      ]
+      "dont-discover": []
     }
   },
   "scripts": {
@@ -76,5 +79,4 @@
       "url": "https://packagist.laravel-china.org"
     }
   }
-
 }

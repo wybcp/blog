@@ -1,17 +1,16 @@
-
-// Fonts
-// @import url(https://fonts.googleapis.com/css?family=Raleway:400);
+// Font-awesome
+@import 'node_modules/@fortawesome/fontawesome-free-webfonts/scss/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-brands';
+@import 'node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-regular';
+@import 'node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-solid';
 
 // Variables
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 
-// Ionicons
-@import 'node_modules/ionicons/scss/ionicons';
-
-//Sweetalert
+// Sweetalert
 @import "node_modules/sweetalert2/src/sweetalert2.scss";
 
 // Toastr
