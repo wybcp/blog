@@ -41,6 +41,8 @@ class DiscussionController extends ApiController
             'last_user_id' => \Auth::id()
         ]);
 
+        $data['content'] = $data['content'];
+
         $this->discussion->store($data);
 
         return $this->response->withNoContent();
@@ -88,6 +90,8 @@ class DiscussionController extends ApiController
         $data = array_merge($request->all(), [
             'last_user_id' => \Auth::id()
         ]);
+
+        $data['content'] = $data['content'];
 
         $this->discussion->update($id, $data);
 

@@ -19,13 +19,13 @@ mix.webpackConfig({
   },
   resolve: {
     alias: {
-      'components': 'assets/js/components',
       'config': 'assets/js/config',
       'lang': 'assets/js/lang',
       'plugins': 'assets/js/plugins',
       'vendor': 'assets/js/vendor',
-      'views': 'assets/js/views',
-      'dashboard': 'assets/js/views/dashboard',
+      'dashboard': 'assets/js/dashboard',
+      'home': 'assets/js/home',
+      'js': 'assets/js',
     },
     modules: [
       'node_modules',
@@ -35,7 +35,7 @@ mix.webpackConfig({
 });
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
-   .js('resources/assets/js/home.js', 'public/js')
-   .sass('resources/assets/sass/home.scss', 'public/css')
-   .version();
+  .sass('resources/assets/sass/app.scss', 'public/css')
+  .js('resources/assets/js/home.js', 'public/js')
+  .sass('resources/assets/sass/home.scss', 'public/css')
+  .version();
