@@ -53,7 +53,7 @@ class AuthController extends Controller
             }
         } else {
             if ($user) {
-                auth()->loginUsingId($user->id);
+                auth()->loginUsingId($user->id，true);
                 return redirect()->to('/');
             } else {
                 $this->registerUser($githubUser);
