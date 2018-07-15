@@ -16,15 +16,15 @@
                 <div class="media my-3">
                     <div class="media-left mr-3">
                         <a href="{{ url('discussion', ['id' => $discussion->id]) }}">
-                            <img class="media-object rounded-circle" width="50" src="{{ $discussion->user->avatar }}">
+                            <img class="media-object rounded-circle" width="50" src="{{ $discussion->user->avatar ?? config('blog.default_avatar') }}">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h6 class="media-heading">
+                        <h5 class="media-heading">
                             <a href="{{ url('discussion', ['id' => $discussion->id]) }}">
                                 {{ $discussion->title }}
                             </a>
-                        </h6>
+                        </h5>
                         <div class="media-conversation-meta">
                             <div class="media-conversation-replies">
                                 <a href="{{ url('discussion', ['id' => $discussion->id]) }}">
