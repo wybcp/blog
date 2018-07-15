@@ -10,9 +10,10 @@
   "type": "project",
   "require": {
     "php": ">=7.0.0",
-    "fideloper/proxy": "~3.3",
     "dflydev/apache-mime-types": "^1.0",
     "erusev/parsedown": "^1.6",
+    "fideloper/proxy": "~3.3",
+    "genealabs/laravel-model-caching": "^0.2.47",
     "intervention/image": "^2.3",
     "jcc/laravel-vote": "dev-master",
     "jellybool/flysystem-upyun": "dev-master",
